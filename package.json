@@ -8,8 +8,24 @@
     "start": "next start"
   },
   "dependencies": {
-    "next": "9.2.2",
-    "react": "16.13.0",
-    "react-dom": "16.13.0"
-  }
+    "isomorphic-unfetch": "^3.0.0",
+    "next": "^9.3.1",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
+    "react-markdown": "^4.3.1"
+  },
+  "description": "This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/zeit/next.js/tree/canary/packages/create-next-app).",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hoelzlmanuel/portfolio-page.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hoelzlmanuel/portfolio-page/issues"
+  },
+  "homepage": "https://github.com/hoelzlmanuel/portfolio-page#readme"
 }
