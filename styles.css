@@ -1,0 +1,10 @@
+/* purgecss start ignore */
+@tailwind base;
+@tailwind components;
+/* purgecss end ignore */
+
+.h-128 {
+  height: 32rem;
+}
+
+@tailwind utilities;

@@ -1,12 +1,22 @@
 import Layout from '../components/Layout'
 import Trivia from '../components/Trivia'
 import Projects from '../components/Projects'
+import Resume from '../components/Resume'
+import About from '../components/About'
+import Contact from '../components/Contact'
 
-const Page = () => (
+export default () => (
   <Layout>
-    <Trivia />
+    <Trivia
+      strings={[
+        'Some <i>strings</i> <br>are\n slanted',
+        'Some <strong>strings</strong> are bold',
+        'HTML characters &times; &copy;'
+      ]}
+    />
     <Projects />
+    <Resume />
+    <About />
+    <Contact />
   </Layout>
 )
-
-export default Page
