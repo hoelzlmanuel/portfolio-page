@@ -12,6 +12,18 @@
   padding-bottom: 0.2rem;
 }
 
+.w-96 {
+  width: 24rem;
+}
+
+.leading-1 {
+  line-height: 0.25rem;
+}
+
+.rounded-xl {
+  border-radius: 1rem;
+}
+
 .marked {
   @apply rounded-full bg-black px-3 py-05 text-white;
   box-decoration-break: clone;

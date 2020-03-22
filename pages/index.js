@@ -1,9 +1,9 @@
-import Layout from '../components/Layout'
-import Trivia from '../components/Trivia'
-import Projects from '../components/Projects'
-import Resume from '../components/Resume'
-import About from '../components/About'
-import Contact from '../components/Contact'
+import Layout from '../components/utilities/Layout'
+import Trivia from '../components/trivia/Trivia'
+import Projects from '../components/projects/Projects'
+import Resume from '../components/resume/Resume'
+import About from '../components/about/About'
+import Contact from '../components/contact/Contact'
 
 export default () => (
   <Layout>

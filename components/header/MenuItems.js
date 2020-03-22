@@ -1,6 +1,6 @@
 const MenuItems = () => (
   <div className="w-full block relative flex-grow lg:flex lg:items-center lg:w-auto">
-    <div className="text-sm lg:flex-grow lg:absolute lg:right-0">
+    <div className="text-lg lg:flex-grow lg:absolute lg:right-0">
       <a href="#projects" className="block mt-4 lg:inline-block lg:mt-0 lg:hover:text-middle mr-16">
         projects
       </a>
