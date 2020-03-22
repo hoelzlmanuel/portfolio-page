@@ -3,8 +3,18 @@
 @tailwind components;
 /* purgecss end ignore */
 
-.h-128 {
-  height: 32rem;
+.h-96 {
+  height: 24rem;
+}
+
+.py-05 {
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+}
+
+.marked {
+  @apply rounded-full bg-black px-3 py-05 text-white;
+  box-decoration-break: clone;
 }
 
 @tailwind utilities;

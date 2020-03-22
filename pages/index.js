@@ -7,13 +7,7 @@ import Contact from '../components/Contact'
 
 export default () => (
   <Layout>
-    <Trivia
-      strings={[
-        'Some <i>strings</i> <br>are\n slanted',
-        'Some <strong>strings</strong> are bold',
-        'HTML characters &times; &copy;'
-      ]}
-    />
+    <Trivia />
     <Projects />
     <Resume />
     <About />
