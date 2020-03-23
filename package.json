@@ -19,6 +19,7 @@
     "react-dom": "^16.13.0",
     "react-helmet": "^5.2.1",
     "react-markdown": "^4.3.1",
+    "react-useanimations": "^1.2.13",
     "tailwindcss": "^1.2.0",
     "typeit-react": "^0.1.0"
   },

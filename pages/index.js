@@ -8,9 +8,9 @@ import Contact from '../components/contact/Contact'
 export default () => (
   <Layout>
     <Trivia />
+    <About />
     <Projects />
     <Resume />
-    <About />
     <Contact />
   </Layout>
 )

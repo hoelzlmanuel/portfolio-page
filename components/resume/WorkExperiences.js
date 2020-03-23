@@ -6,7 +6,6 @@ const WorkExperiences = () => (
     <WorkExperience 
       employer="sec consult"
       jobTitle="associate security consultant (internship)"
-      description="i worked"
       time="july 2019 - august 2019"
     />
     <WorkExperience 
@@ -17,7 +16,7 @@ const WorkExperiences = () => (
     <WorkExperience 
       employer="stadtgemeinde groß gerungs"
       jobTitle="internship"
-      time="july 2017 - july 2017 (TODO: not sure)"
+      time="july 2017 - july 2017"
     />
   </div>
 )

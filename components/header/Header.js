@@ -1,5 +1,6 @@
 import MenuItems from './MenuItems'
 import withWindowDimensions from '../utilities/withWindowsDimensions'
+import UseAnimations from 'react-useanimations'
 
 class Header extends React.Component {
   state = {
@@ -21,8 +22,8 @@ class Header extends React.Component {
             <span className="font-semibold text-xl tracking-tight">manuel@hoelzl.dev</span>
           </div>
           <div className="block lg:hidden" onClick={this.toggleMenuVisibility}>
-            <button className={`flex items-center px-3 py-2 border rounded-full focus:outline-none ${this.state.showMenu ? "border-white" : "border-black hover:border-medium"}`}>
-              <svg className="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" /></svg>
+            <button className={`flex items-center px-3 py-2 border-2 rounded-full focus:outline-none ${this.state.showMenu ? "border-white" : "border-black hover:border-medium"}`}>
+              <UseAnimations animationKey="menu4" />
             </button>
           </div>
           {this.state.showMenu && <MenuItems />}
