@@ -1,5 +1,5 @@
 const Project = props => (
-  <div className="p-4 relative border-2 border-black rounded-xl text-lg">
+  <div className="p-4 relative border-2 border-black rounded-xl text-lg shadow-strong">
     <div>{props.category} &bull; {props.year}</div>
     <h2 className="font-extrabold text-3xl">{props.title}</h2>
     <div>{props.description}</div>

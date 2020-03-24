@@ -17,8 +17,10 @@
     "next": "^9.3.1",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
+    "react-headscroll": "^2.1.13",
     "react-helmet": "^5.2.1",
     "react-markdown": "^4.3.1",
+    "react-text-loop": "^2.3.0",
     "react-useanimations": "^1.2.13",
     "tailwindcss": "^1.2.0",
     "typeit-react": "^0.1.0"

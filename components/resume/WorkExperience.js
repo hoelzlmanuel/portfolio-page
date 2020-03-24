@@ -1,6 +1,6 @@
 const WorkExperience = (props) => (
   <div className="text-lg my-8">
-    <div className="font-bold text-xl mb-2">{props.employer}</div>
+    <div className="font-bold text-xl mb-2"><a target="_blank" href={`${props.link}`} className="inline-block link link-black link-b-3-px">{props.employer} </a><embed className="ml-1 inline align-text-bottom mb-1" src="images/external-link.svg" /></div>
     <div className="mb-2">{props.jobTitle}</div>
     {
       props.description !== undefined && <div className="mb-2">{props.description}</div>

@@ -1,0 +1,37 @@
+.hvr-white-underline-center-out:hover {
+  text-decoration: none; }
+
+.hvr-white-underline-center-out:after {
+  bottom: 0.35rem;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: relative;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+  background: none repeat scroll 0 0 #ffffff;
+}
+
+.hvr-white-underline-center-out:hover:after {
+  width: 100%;
+  left: 0; }
+
+.hvr-underline-center-out:hover {
+  text-decoration: none; }
+
+.hvr-underline-center-out:after {
+  bottom: 3px;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: relative;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+  background: none repeat scroll 0 0 #000000; 
+}
+
+.hvr-underline-center-out:hover:after {
+  width: 100%;
+  left: 0; }

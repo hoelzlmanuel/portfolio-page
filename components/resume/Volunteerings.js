@@ -8,6 +8,7 @@ const Volunteerings = () => (
         name="association for technology, research and innovation austria"
         role="founding board member"
         time="november 2018 - current"
+        link="https://www.atria.or.at"
       />
     </div>
   </div>

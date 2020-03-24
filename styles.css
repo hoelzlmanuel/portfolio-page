@@ -1,6 +1,7 @@
 /* purgecss start ignore */
 @tailwind base;
 @tailwind components;
+
 /* purgecss end ignore */
 
 .h-96 {
@@ -27,6 +28,93 @@
 .marked {
   @apply rounded-full bg-black px-3 py-05 text-white;
   box-decoration-break: clone;
+}
+
+.shadow-strong {
+  box-shadow: 10px 10px 20px -10px rgba(0,0,0,0.5);
+}
+
+.grayscale {
+  filter: grayscale(100%);
+}
+
+@variants responsive {
+  .text-2-5xl {
+    font-size: 1.6rem;
+  }
+
+  .max-h-70 {
+    max-height: 70%;
+  }
+
+  .min-h-20 {
+    min-height: 20%;
+  }
+
+  .h-20-p {
+    height: 20%;
+  }
+
+  .h-30-p {
+    height: 30%;
+  }
+
+  .h-40-p {
+    height: 40%;
+  }
+
+  .h-50-p {
+    height: 50%;
+  }
+
+  .h-60-p {
+    height: 60%;
+  }
+
+  .h-70-p {
+    height: 70%;
+  }
+
+  .h-80-p {
+    height: 80%
+  }
+}
+
+@variants responsive {
+  .link:hover {
+    text-decoration: none;
+  }
+
+  .link:hover:after {
+    width: 100%;
+    left: 0;
+  }
+
+  .link:after {
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: relative;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+
+  .link-white:after {
+    background: none repeat scroll 0 0 #ffffff;
+  }
+
+  .link-black:after {
+    background: none repeat scroll 0 0 #000000;
+  }
+
+  .link-b-035-rem:after {
+    bottom: 0.35rem;
+  }
+
+  .link-b-3-px:after {
+    bottom: 3px;
+  }
 }
 
 @tailwind utilities;

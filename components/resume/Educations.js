@@ -8,11 +8,13 @@ const Educations = () => (
       major="informatics - focus on java, network engineering, relational database design, project management, business economics and cyber security"
       graduation="matura"
       time="2016 - 2021"
+      link="https://www.htlstp.ac.at/"
     />
     <Education 
       institute="hauptschule groß gerungs"
       major="career orientation and english as working language "
       time="2012 - 2016"
+      link="http://nmsgerungs.ac.at/"
     />
   </div>
 )
