@@ -34,8 +34,37 @@
   box-shadow: 10px 10px 20px -10px rgba(0,0,0,0.5);
 }
 
+.shadow-project {
+  box-shadow: 0 8px 30px rgba(0,0,0,0.16);
+}
+
 .grayscale {
   filter: grayscale(100%);
+}
+
+.heading {
+  overflow: hidden;
+  text-align: left;
+}
+
+.heading:before, .heading:after {
+  background-color: #000;
+  content: "";
+  display: inline-block;
+  height: 2px;
+  position: relative;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.heading:before {
+  right: 0.5em;
+  margin-left: -100%;
+}
+
+.heading:after {
+  left: 0.5em;
+  margin-right: -100%;
 }
 
 @variants responsive {
@@ -78,43 +107,29 @@
   .h-80-p {
     height: 80%
   }
+
+
+.link {
+	box-decoration-break: slice;
+	line-height: 1.5;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 0% 100%;
+	transition: background-size 0.3s ease-in-out;
 }
 
-@variants responsive {
-  .link:hover {
-    text-decoration: none;
-  }
+.link-black {
+	background-image: linear-gradient( transparent calc( 100% - 2px ), black 2px );
+}
 
-  .link:hover:after {
-    width: 100%;
-    left: 0;
-  }
+.link-white {
+	background-image: linear-gradient( transparent calc( 100% - 2px ), white 2px );
+}
 
-  .link:after {
-    content: "";
-    display: block;
-    height: 2px;
-    left: 50%;
-    position: relative;
-    transition: width 0.3s ease 0s, left 0.3s ease 0s;
-    width: 0;
-  }
+.link:hover, .link:focus {
+  background-size: 100% 100%;
+}
 
-  .link-white:after {
-    background: none repeat scroll 0 0 #ffffff;
-  }
-
-  .link-black:after {
-    background: none repeat scroll 0 0 #000000;
-  }
-
-  .link-b-035-rem:after {
-    bottom: 0.35rem;
-  }
-
-  .link-b-3-px:after {
-    bottom: 3px;
-  }
 }
 
 @tailwind utilities;

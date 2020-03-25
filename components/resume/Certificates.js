@@ -9,12 +9,14 @@ const Certificates = () => (
         institute="cambridge assessment english"
         date="july 2019"
         expiration="no expiration"
+        link="https://www.cambridgeenglish.org/exams-and-tests/business-higher/"
       />
       <Certificate
         name="lpi linux essentials"
         institute="linux professional institute"
         date="june 2019"
         expiration="no expiration"
+        link="https://www.lpi.org/our-certifications/linux-essentials-overview"
       />
     </div>
   </div>

@@ -8,9 +8,10 @@ const Trivia = (props) => (
       <TypeIt
         options={{
           breakLines: false,
-          speed: 60,
-          deleteSpeed: 10,
+          speed: 57,
+          deleteSpeed: 12,
           lifeLike: false,
+          html: true
         }}
         getBeforeInit={instance => {
           instance
@@ -39,11 +40,11 @@ const Trivia = (props) => (
             .type(" he's <span class=marked>awesome</span>.")
             .pause(p)
             .delete()
-            .type("i think we should be friends on <span class=marked>linkedin</span>.")
-            .pause(p)
-            .delete()
             .type("i prefer <span class=marked>cold over heat</span> and <span class=marked>snow over sun</span>.")
             .pause(p)
+            .delete()
+            .type("i think we should be friends on <span class=marked><a href='https://www.linkedin.com/in/hoelzlmanuel' class='link link-white'>linkedin</a></span>.")
+            .pause(p*1.5)
             .delete()
             .type("i prefer <span class=marked>lower-case</span> letters.")
             .pause(p)
@@ -56,20 +57,17 @@ const Trivia = (props) => (
             .type(" i should add that i'm <span class=marked>right-handed</span>.")
             .pause(p)
             .delete()
-            .type("this website does not use any <span class=marked>cookies</span>.")
-            .pause(500)
-            .type(" it's nice not having to accept any, huh?")
-            .pause(p)
-            .delete()
-            .type("wow, you made it this far?")
+            
+            .type("i'm running out of things to say.")
             .pause(1000)
-            .type(" you should check out my <span class=marked>projects</span> and <span class=marked>résumé</span>.") 
+            .type(" you should better check out my <span id='marked-projects' class='marked'><a href='#projects' class='link link-white'>projects</a></span>") 
+            .type(" and ")
+            .type("<span id='marked-resume' class='marked'><a href='#resume' class='link link-white'>résumé</a></span>.")
           return instance
         }}
       />
     </div>
   </div>
 )
-
 
 export default Trivia

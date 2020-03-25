@@ -11,7 +11,7 @@ const WorkExperiences = () => (
     />
     <WorkExperience 
       employer="greentube"
-      jobTitle="internship it"
+      jobTitle="internship IT"
       time="august 2018 - august 2018"
       link="https://www.greentube.com/"
     />

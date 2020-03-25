@@ -6,9 +6,14 @@ import About from '../components/about/About'
 import Contact from '../components/contact/Contact'
 import Header from '../components/header/Header'
 import Headscroll from 'react-headscroll'
+import Helmet from 'react-helmet'
 
 export default () => (
   <Layout>
+    <Helmet>
+      <meta charSet="utf-8" />
+      <title>manuel hölzl</title>
+    </Helmet>
     <div className="max-h-screen h-screen flex flex-col">
       <Header />
       <Trivia id="trivia" className="h-50-p md:h-30-p lg:h-20-p" />
