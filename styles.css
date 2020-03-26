@@ -108,28 +108,26 @@
     height: 80%
   }
 
+  .link {
+    box-decoration-break: slice;
+    line-height: 1.5;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 0% 100%;
+    transition: background-size 0.3s ease-in-out;
+  }
 
-.link {
-	box-decoration-break: slice;
-	line-height: 1.5;
-	background-repeat: no-repeat;
-	background-position: 50% 50%;
-	background-size: 0% 100%;
-	transition: background-size 0.3s ease-in-out;
-}
+  .link-black {
+    background-image: linear-gradient( transparent calc( 100% - 2px ), black 2px );
+  }
 
-.link-black {
-	background-image: linear-gradient( transparent calc( 100% - 2px ), black 2px );
-}
+  .link-white {
+    background-image: linear-gradient( transparent calc( 100% - 2px ), white 2px );
+  }
 
-.link-white {
-	background-image: linear-gradient( transparent calc( 100% - 2px ), white 2px );
-}
-
-.link:hover, .link:focus {
-  background-size: 100% 100%;
-}
-
+  .link:hover, .link:focus {
+    background-size: 100% 100%;
+  }
 }
 
 @tailwind utilities;

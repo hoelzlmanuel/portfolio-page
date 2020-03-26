@@ -16,11 +16,10 @@ export default () => (
     </Helmet>
     <div className="max-h-screen h-screen flex flex-col">
       <Header />
-      <Trivia id="trivia" className="h-50-p md:h-30-p lg:h-20-p" />
-      <div className="flex h-50-p md:h-70-p lg:h-80-p flex p-8 md:p-12 w-full">
-        <div className="flex justify-end h-full w-full">
-          <img className="rounded-xl w-auto h-full shadow-strong object-cover" src="images/manuel-hoelzl-portrait.jpg" />
-        </div>
+      <Trivia id="trivia" />
+
+      <div className="w-full h-full min-h-0 flex justify-end p-8">
+        <img className="rounded-xl h-max-full w-max-full h-full w-auto shadow-strong object-cover" src="images/manuel-hoelzl-portrait.jpg" />
       </div>
     </div>
     <About id="about" />

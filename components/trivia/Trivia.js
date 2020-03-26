@@ -4,7 +4,11 @@ const p = 1500
 
 const Trivia = (props) => (
   <div className={`container flex mx-auto mt-8 text-2-5xl sm:text-3xl ${props.className}`}>
-    <div className="container sm: mx-8 md:mx-12">
+
+    {/*reserves space for the TypeIt component to not cause reflow*/}
+    <span className="mx-8 md:mx-12 invisible">am i crazy for using my mouse on the <span className="marked">left side</span> of my keyboard? i should mention that i'm <span className="marked">right-handed</span>.
+            </span>
+    <div className="container px-8 md:px-12 absolute">
       <TypeIt
         options={{
           breakLines: false,
@@ -44,7 +48,7 @@ const Trivia = (props) => (
             .pause(p)
             .delete()
             .type("i think we should be friends on <span class=marked><a href='https://www.linkedin.com/in/hoelzlmanuel' class='link link-white'>linkedin</a></span>.")
-            .pause(p*1.5)
+            .pause(p * 1.5)
             .delete()
             .type("i prefer <span class=marked>lower-case</span> letters.")
             .pause(p)
@@ -54,13 +58,13 @@ const Trivia = (props) => (
             .delete()
             .type("am i crazy for using my mouse on the <span class=marked>left side</span> of my keyboard?")
             .pause(1000)
-            .type(" i should add that i'm <span class=marked>right-handed</span>.")
+            .type(" i should mention that i'm <span class=marked>right-handed</span>.")
             .pause(p)
             .delete()
-            
+
             .type("i'm running out of things to say.")
             .pause(1000)
-            .type(" you should better check out my <span id='marked-projects' class='marked'><a href='#projects' class='link link-white'>projects</a></span>") 
+            .type(" you should better check out my <span id='marked-projects' class='marked'><a href='#projects' class='link link-white'>projects</a></span>")
             .type(" and ")
             .type("<span id='marked-resume' class='marked'><a href='#resume' class='link link-white'>résumé</a></span>.")
           return instance

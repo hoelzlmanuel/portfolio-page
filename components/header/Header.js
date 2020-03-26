@@ -29,27 +29,29 @@ class Header extends React.Component {
   render() {
     if (this.props.screenNotLarge) {
       return (
-        <Headscroll
-          fixed={true}
-          offsettop={-100}
-          upTolerance={2}
-          downTolerance={2}
-          position="top"
-        >
-          <div className="shadow-project bg-white">
-            <nav className={`py-4 px-6 text-black ${this.state.showMenu && "bg-black text-white h-screen overflow-y-hidden"}`}>
-              <div className="flex flex-shrink-0">
-                <div className="w-8 h-8 mr-2" onClick={this.toggleMenuVisibility}>
-                <embed className="w-full h-full inline align-text-bottom mb-1" src="images/logo.svg" />
+        <div>
+          <Headscroll
+            fixed={true}
+            offsettop={-100}
+            upTolerance={2}
+            downTolerance={2}
+            position="top"
+          >
+            <div className="shadow-project bg-white">
+              <nav className={`py-4 px-6 text-black ${this.state.showMenu && "bg-black text-white h-screen overflow-y-hidden"}`}>
+                <div className="flex flex-shrink-0">
+                  <div className="w-8 h-8 mr-2" onClick={this.toggleMenuVisibility}>
+                    <embed className="w-full h-full inline align-text-bottom mb-1" src="images/logo.svg" />
+                  </div>
+                  <span className="font-semibold text-2xl">manuel@hoelzl.dev</span>
                 </div>
-                <span className="font-semibold text-2xl">manuel@hoelzl.dev</span>
-              </div>
-              <div className="text-2xl" onClick={this.toggleMenuVisibility}>
-                {this.state.showMenu && <MenuItems />}
-              </div>
-            </nav>
-          </div>
-        </Headscroll>
+                <div className="text-2xl" onClick={this.toggleMenuVisibility}>
+                  {this.state.showMenu && <MenuItems />}
+                </div>
+              </nav>
+            </div>
+          </Headscroll>
+        </div>
       )
     } else {
       return (
