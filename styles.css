@@ -4,6 +4,35 @@
 
 /* purgecss end ignore */
 
+@font-face {
+  font-family: helvetica-neue;
+  src: url('public/fonts/HelveticaNeueCyr-Italic.ttf');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: helvetica-neue;
+  src: url('public/fonts/HelveticaNeueCyr-Roman.ttf');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: helvetica-neue;
+  src: url('public/fonts/HelveticaNeueCyr-Bold.ttf');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: helvetica-neue;
+  src: url('public/fonts/HelveticaNeueCyr-Medium.ttf');
+  font-weight: 600;
+}
+
+html {
+  font-family: -apple-system, helvetica-neue, Roboto, sans-serif
+}
+
 .h-96 {
   height: 24rem;
 }
