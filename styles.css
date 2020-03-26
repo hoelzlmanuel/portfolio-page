@@ -5,32 +5,32 @@
 /* purgecss end ignore */
 
 @font-face {
-  font-family: helvetica-neue;
-  src: url('public/fonts/HelveticaNeueCyr-Italic.ttf');
+  font-family: rubik;
+  src: url('public/fonts/Rubik-Italic.ttf');
   font-weight: normal;
   font-style: italic;
 }
 
 @font-face {
-  font-family: helvetica-neue;
-  src: url('public/fonts/HelveticaNeueCyr-Roman.ttf');
+  font-family: rubik;
+  src: url('public/fonts/Rubik-Regular.ttf');
   font-weight: normal;
 }
 
 @font-face {
-  font-family: helvetica-neue;
-  src: url('public/fonts/HelveticaNeueCyr-Bold.ttf');
+  font-family: rubik;
+  src: url('public/fonts/Rubik-Bold.ttf');
   font-weight: bold;
 }
 
 @font-face {
-  font-family: helvetica-neue;
-  src: url('public/fonts/HelveticaNeueCyr-Medium.ttf');
+  font-family: rubik;
+  src: url('public/fonts/Rubik-Medium.ttf');
   font-weight: 600;
 }
 
-html {
-  font-family: -apple-system, helvetica-neue, Roboto, sans-serif
+* {
+  font-family: -apple-system, rubik, Roboto, sans-serif
 }
 
 .h-96 {

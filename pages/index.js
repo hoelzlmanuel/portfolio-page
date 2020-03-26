@@ -13,6 +13,7 @@ export default () => (
     <Helmet>
       <meta charSet="utf-8" />
       <title>manuel hölzl</title>
+      <link rel="shortcut icon" type="image/svg+xml" href="images/logo.svg"></link>
     </Helmet>
     <div className="max-h-screen h-screen flex flex-col">
       <Header />

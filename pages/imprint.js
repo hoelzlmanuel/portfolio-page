@@ -6,6 +6,7 @@ export default () => (
     <Helmet>
       <meta charSet="utf-8" />
       <title>manuel hölzl - imprint</title>
+      <link rel="shortcut icon" type="image/svg+xml" href="images/logo.svg"></link>
     </Helmet>
     <div className="p-8 overflow-x-auto">
       <h1 className="heading text-3xl md:text-5xl font-extrabold w-full mb-6">
