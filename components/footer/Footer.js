@@ -6,13 +6,13 @@ const Footer = () => (
   <div className="p-8 block border-t-2 border-black mx-8 grid grid-cols-1 md:grid-cols-2 gap-4">
 
     <div className="flex justify-center items-center md:justify-start">
-      <a className="inline" href="https://github.com/hoelzlmanuel">
+      <a className="inline" href="https://github.com/hoelzlmanuel" target="_blank">
         <UseAnimations className="mr-2" animationKey="github" />
       </a>
-      <a className="inline" href="https://www.linkedin.com/in/hoelzlmanuel/">
+      <a className="inline" href="https://www.linkedin.com/in/hoelzlmanuel/" target="_blank">
         <UseAnimations className="ml-2" animationKey="linkedin" />
       </a>
-      <a className="inline" href="https://codepen.io/hoelzlmanuel">
+      <a className="inline" href="https://codepen.io/hoelzlmanuel" target="_blank">
         <UseAnimations className="ml-2" animationKey="codepen" />
       </a>
     </div>
