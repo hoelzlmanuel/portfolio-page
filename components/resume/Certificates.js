@@ -12,6 +12,13 @@ const Certificates = () => (
         link="https://www.cambridgeenglish.org/exams-and-tests/business-higher/"
       />
       <Certificate
+        name="pm basic"
+        institute="pma - projekt management austria"
+        date="march 2020"
+        expiration="no expiration"
+        link="https://www.pma.at/en/certification/project-management/pm-basic"
+      />
+      <Certificate
         name="lpi linux essentials"
         institute="linux professional institute"
         date="june 2019"
